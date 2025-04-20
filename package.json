@@ -1,0 +1,20 @@
+{
+  "name": "server_basico_express",
+  "version": "1.0.0",
+  "description": "Servidor básico con express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "author": "David Fernández",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.1",
+    "sync-request": "^6.1.0",
+    "then-request": "^6.0.2"
+  }
+}
