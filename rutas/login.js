@@ -11,7 +11,7 @@ const app = express();
 const url = 'https://utedevas.es/Mantenimiento/Mantenimiento.php?p=';
 
 
-app.get('/', async(req, res) => {
+app.post('/', async(req, res) => {
 
     var id = await realizarMantenimiento();
 
