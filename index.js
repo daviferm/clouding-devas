@@ -13,7 +13,11 @@ app.get('', (req, res) => {
 })
 
 const loginRoutes = require('./rutas/login');
+const refreshRoutes = require('./rutas/refresh');
+
 app.use('/login', loginRoutes);
+app.use('/refresh', refreshRoutes);
+
 
 
 // Manejar rutas desconocidas
