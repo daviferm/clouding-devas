@@ -14,11 +14,11 @@ app.get('', (req, res) => {
 
 const loginRoutes = require('./rutas/login');
 const refreshRoutes = require('./rutas/refresh');
-const utedevasRoutes = require('./rutas/utedevas');
+// const utedevasRoutes = require('./rutas/utedevas');
 
 app.use('/login', loginRoutes);
 app.use('/refresh', refreshRoutes);
-app.use('/utedevas', utedevasRoutes);
+// app.use('/utedevas', utedevasRoutes);
 
 
 
