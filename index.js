@@ -8,6 +8,8 @@ const PORT = 3049;
 //** Configurar los cors
 app.use(cors());
 
+app.use(express.json());
+
 app.get('', (req, res) => {
     res.send('------dvs.backend.es  🥶--------');
 })
@@ -15,10 +17,13 @@ app.get('', (req, res) => {
 const loginRoutes = require('./rutas/login');
 const refreshRoutes = require('./rutas/refresh');
 const utedevasRoutes = require('./rutas/utedevas');
+const cancelarAlarmaRoutes = require('./rutas/cancelar-alarma');
+
 
 app.use('/login', loginRoutes);
 app.use('/refresh', refreshRoutes);
 app.use('/utedevas', utedevasRoutes);
+app.use('/cancelar-alarma', cancelarAlarmaRoutes);
 
 
 
